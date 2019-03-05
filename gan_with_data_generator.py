@@ -103,7 +103,7 @@ def plot_generated(n_ex=10, dim=(1, 10), figsize=(12, 2)):
 losses = {"D":[], "G":[]}
 epochs = 200
 steps_per_epoch = np.floor(x_train_len/train_params['batch_size'])
-print('steps_per_epoch: ', steps_per_epoch)
+#print('steps_per_epoch: ', steps_per_epoch)
 
 enqueuer = OrderedEnqueuer(TrainGenerator,
                            use_multiprocessing=False,
